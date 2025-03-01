@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
  <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Илюша и пельмени</title>
  <style>
@@ -13,21 +11,13 @@
      align-items: center;
      height: 100vh;
      margin: 0;
-     flex-direction: column;
    }
-   #game-title {
-     color: white;
-     font-size: 20px;
-     text-align: center;
-     margin-bottom: 10px;
+   canvas {
+     touch-action: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
    }
  </style>
 </head>
-<body>
-
- <div id="game-title">Не дай пельмешке упасть в рот Илюши</div>
- <canvas id="canvas" width="288" height="512"></canvas>
-
- <script src="js/game.js"></script>
-</body>
-</html>

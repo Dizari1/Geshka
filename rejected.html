@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отшитые</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .logo {
-            width: 150px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .names {
-            display: flex;
-            gap: 15px;
-        }
-        .names h2 {
-            margin: 5px;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Илюша и пельмени</title>
+ <style>
+   body {
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     flex-direction: column;
+   }
+   #game-title {
+     color: white;
+     font-size: 20px;
+     text-align: center;
+     margin-bottom: 10px;
+   }
+ </style>
 </head>
 <body>
-    <img src="444.png" alt="Лого" class="logo">
-    <div class="names">
-    </div>
+
+ <div id="game-title">Не дай пельмешке упасть в рот Илюши</div>
+ <canvas id="canvas" width="288" height="512"></canvas>
+
+ <script src="js/game.js"></script>
 </body>
 </html>
